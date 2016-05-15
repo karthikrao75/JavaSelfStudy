@@ -7,6 +7,7 @@ public class EnumerationExample {
 
 	public static void main(String[] args) {
 		
+		//enumeration is an interface
 		//enumerations(cursors) are used to retrieve objects one by one 
 		
 		Vector<Object> v=new Vector<Object>();
