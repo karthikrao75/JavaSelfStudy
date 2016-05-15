@@ -10,6 +10,11 @@ public class IteratorExample {
 	//can get Iterator object by collection interface iterator method 
 	//public Iterator iterator(){}
 	
+	
+	//limitations
+	// movies only forward i.e only next no previous
+	//only two operations read/remove no adding capabilities (no replacing of object).
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Object> a=new ArrayList<>();
