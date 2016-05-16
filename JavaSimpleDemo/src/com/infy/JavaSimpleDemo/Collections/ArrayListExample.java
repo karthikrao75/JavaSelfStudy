@@ -3,7 +3,6 @@ package com.infy.JavaSimpleDemo.Collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class ArrayListExample {
 	
@@ -75,11 +74,9 @@ public class ArrayListExample {
 		System.out.println(i1);
 		//6
 		
-		//iterates list starting from index
-		ListIterator<Object> itr=al.listIterator(3);
-		
+
 		//set index with object
-		Object o3=al.set(6, 3);
+		al.set(6, 3);
 		
 		al.subList(3, 6);
 	}
