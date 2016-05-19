@@ -24,11 +24,11 @@ public class Tester {
 		//add StringBuffer to treeset in reverse sorting order
 		TreeSet<StringBuffer> t3=new TreeSet<StringBuffer>(new MyComparator2());
 		t3.add(new StringBuffer("karthik"));
-		t3.add(new StringBuffer("Srikanth"));
+		t3.add(new StringBuffer("srikanth"));
 		t3.add(new StringBuffer("babishan"));
 		t3.add(new StringBuffer("ram"));
 		System.out.println(t3);
-		//[ram, karthik, babishan, Srikanth]
+		//[srikanth, ram, karthik, babishan]
 	}
 
 }

@@ -11,7 +11,7 @@ public class MyComparator1 implements Comparator<Employee>{
 			if(l1<l2){
 				return -1;
 			}
-			if(l1>l2){
+			else if(l1>l2){
 				return +1;
 			}
 			else{
