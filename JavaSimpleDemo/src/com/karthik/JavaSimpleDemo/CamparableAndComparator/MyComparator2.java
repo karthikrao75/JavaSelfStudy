@@ -1,4 +1,4 @@
-package com.karthik.JavSimpleDemo.CamparableAndComparator;
+package com.karthik.JavaSimpleDemo.CamparableAndComparator;
 
 import java.util.Comparator;
 

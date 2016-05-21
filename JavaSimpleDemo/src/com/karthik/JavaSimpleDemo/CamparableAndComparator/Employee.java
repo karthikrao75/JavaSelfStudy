@@ -1,4 +1,4 @@
-package com.karthik.JavSimpleDemo.CamparableAndComparator;
+package com.karthik.JavaSimpleDemo.CamparableAndComparator;
 
 public class Employee implements Comparable<Employee> {
 	private int id;
