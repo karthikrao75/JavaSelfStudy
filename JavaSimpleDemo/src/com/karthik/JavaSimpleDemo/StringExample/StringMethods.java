@@ -1,4 +1,4 @@
-package com.karthik.JavaSelfStudy.StringExample;
+package com.karthik.JavaSimpleDemo.StringExample;
 
 public class StringMethods {
 	public static void main(String []args){

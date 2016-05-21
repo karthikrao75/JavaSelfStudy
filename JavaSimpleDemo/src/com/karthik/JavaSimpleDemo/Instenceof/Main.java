@@ -1,4 +1,4 @@
-package com.karthik.JavaSelfStudy.Instenceof;
+package com.karthik.JavaSimpleDemo.Instenceof;
 
 public class Main {
 
