@@ -1,4 +1,4 @@
-package com.infy.JavaSimpleDemo.Collections;
+package com.karthik.JavaSimpleDemo.Collections;
 
 import java.util.Stack;
 
