@@ -42,6 +42,7 @@ public class TreeSetExample {
 		
 		//constract takes collection object
 		TreeSet<Object> t2=new TreeSet<>(t);
+		System.out.println(t2);
 	}
 
 }

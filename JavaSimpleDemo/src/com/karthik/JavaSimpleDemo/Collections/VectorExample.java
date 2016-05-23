@@ -23,14 +23,17 @@ public class VectorExample {
 		System.out.println(v);
 		// karthik,1,karthik
 
-		// constructor with initial capacity
-		Vector<Object> v1 = new Vector<>(15);
 
+		
 		// constructor with initial capacity and increment by
 		Vector<Object> v2 = new Vector<>(10, 5);
 
 		// constructor that takes collection object
-		Vector<Object> v3 = new Vector<>(v);
+		Vector<Object> v3 = new Vector<>(v2);
+		
+		// constructor with initial capacity
+		Vector<Object> v1 = new Vector<>(15);
+		v1.addAll(v3);
 
 		Object c = v.firstElement();
 		System.out.println(c);
