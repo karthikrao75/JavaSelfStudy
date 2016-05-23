@@ -32,7 +32,7 @@ public class TreeMapExample {
 		// {1=karthik, 2=srikanth, 3=jai, 4=amnu} --default sorting order
 
 		// constructor using customized comparator
-		TreeMap<Integer, String> m1 = new TreeMap<>(new MyComparator());
+		TreeMap<Integer, String> m1 = new TreeMap<>(new MyComp());
 		m1.putAll(m);
 		System.out.println(m1);
 		// {4=amnu, 3=jai, 2=srikanth, 1=karthik}
@@ -124,7 +124,7 @@ public class TreeMapExample {
 
 }
 
-class MyComparator implements Comparator<Integer> {
+class MyComp implements Comparator<Integer> {
 
 	@Override
 	public int compare(Integer o1, Integer o2) {
