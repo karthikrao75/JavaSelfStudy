@@ -1,6 +1,5 @@
 package com.karthik.JavaSimpleDemo.Collections;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 //child class of HashMap, insetion order is maintained 

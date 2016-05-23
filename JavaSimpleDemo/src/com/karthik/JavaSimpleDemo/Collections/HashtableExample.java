@@ -49,6 +49,7 @@ public class HashtableExample {
 		
 		//constructor using Map
 		Hashtable<Temp1, String> h3 = new Hashtable<>(h2);
+		System.out.println(h3);
 	}
 
 }
