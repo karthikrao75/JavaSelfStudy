@@ -40,6 +40,7 @@ public class TreeSetExample {
 		//constructor that takes object of class that has implemented comparator interface
 		//TreeSet<Object> t1=new TreeSet<>(comparator);
 		
+		
 		//constract takes collection object
 		TreeSet<Object> t2=new TreeSet<>(t);
 		System.out.println(t2);

@@ -38,7 +38,7 @@ public class PriorityQueueExample {
 		q1.addAll(q);
 
 		// constructor using initial capacity and comparator
-		PriorityQueue<Integer> q2 = new PriorityQueue<>(10, new Mycompare());
+		PriorityQueue<Integer> q2 = new PriorityQueue<>(11, new Mycompare());
 		q2.addAll(q1);
 		System.out.println(q2);
 		// [345, 123, 49, 1, 25, 3]
