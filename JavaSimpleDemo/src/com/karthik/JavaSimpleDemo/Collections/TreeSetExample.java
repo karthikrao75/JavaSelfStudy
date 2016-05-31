@@ -44,6 +44,32 @@ public class TreeSetExample {
 		//constract takes collection object
 		TreeSet<Object> t2=new TreeSet<>(t);
 		System.out.println(t2);
+		
+		
+		//navigable Set specific methods 
+		System.out.println(t.floor(108));//<=108
+		//104
+		System.out.println(t.lower(109));// <109
+		//104
+	System.out.println(t.ceiling(108));//>=108
+	//109
+	System.out.println(t.higher(109));//>109
+	//123
+	System.out.println(t.pollFirst());//remove and return first element
+	//101
+	
+	System.out.println(t);
+	//[104, 109, 123, 134]
+	
+	System.out.println(t.pollLast());//remove last and return object
+	//134
+	
+	System.out.println(t);
+	//[104, 109, 123]
+	
+	System.out.println(t.descendingSet());//returns navigable set
+	//[123, 109, 104]
+	
 	}
 
 }
