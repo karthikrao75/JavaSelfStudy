@@ -1,6 +1,7 @@
 package com.karthik.JavaSimpleDemo.Collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -79,6 +80,7 @@ public class ArrayListExample {
 		al.set(6, 3);
 		
 		al.subList(3, 6);
+	
 	}
 
 }

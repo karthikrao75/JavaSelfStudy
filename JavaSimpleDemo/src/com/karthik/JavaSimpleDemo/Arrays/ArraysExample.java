@@ -2,6 +2,8 @@ package com.karthik.JavaSimpleDemo.Arrays;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 
 public class ArraysExample {
@@ -84,6 +86,7 @@ public class ArraysExample {
 		
 		System.out.println(Arrays.toString(a));
 		//[101, 102, 103, 104, 105, 106, 107, 108, 109]--array in readable format
+		
 	}
 
 }
