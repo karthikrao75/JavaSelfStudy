@@ -22,11 +22,12 @@ public class IteratorExample {
 		a.add("23");
 		a.add("kar");
 		
-		
 		Iterator<Object> i=a.iterator();
 		//instead of a it could be any other collection object
 	while (i.hasNext()) {
 		Object o = (Object) i.next();
+		//a.add("sri");
+		//Exception in thread "main" java.util.ConcurrentModificationException
 		if(o=="kar"){
 			i.remove();
 		}
@@ -37,8 +38,6 @@ public class IteratorExample {
 		}
 	}
 	System.out.println(a);
-	//[1, 23]
-		
+	//[1, 23]		
 	}
-
 }

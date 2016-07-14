@@ -26,15 +26,22 @@ public class ListIteratorExample {
 		ListIterator<Object> li = a.listIterator();
 		while (li.hasNext()) {
 			Object o = (Object) li.next();
-			if (o == "kar") {
+			System.out.println(o);
+			if (o.equals("kar")) {
 				li.set("sri");
+				li.remove();
 			}
+			
 			li.nextIndex();// (1,2,3)
 			System.out.println(o);
 			// 1
 			// 23
 			// kar
+			
 		}
+		System.out.println(a);
+		//[1, 23]
+		
 		while (li.hasPrevious()) {
 			Object o = (Object) li.previous();
 			li.previousIndex();// (1,0,-1)

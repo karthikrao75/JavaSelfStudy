@@ -10,7 +10,7 @@ public class VectorExample {
 		// underline data structure is resizable array
 		// implements serializable, cloneable, randomAccess interface
 		// takes duplicates and heterogeneous variables
-		// initial capacity is 10 and will increase in capacity*10
+		// initial capacity is 10 and will increase in capacity*2
 		// all methods are synchronized hence are thread safe.
 
 		Vector<Object> v = new Vector<Object>();

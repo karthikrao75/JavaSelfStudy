@@ -1,5 +1,6 @@
 package com.karthik.JavaSimpleDemo.Cursors;
 
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -20,6 +21,12 @@ public class EnumerationExample {
 			Object o=e.nextElement();
 			System.out.println(o);
 		}
+		
+/*		Enumeration< Object > enumeration=Collections.enumeration(a);
+		while(enumeration.hasMoreElements()){
+			Object s=enumeration.nextElement();
+			System.out.println(s);
+		}*/
 		
 		// limitations
 		// enumerations can be applied only on legacy classes 
