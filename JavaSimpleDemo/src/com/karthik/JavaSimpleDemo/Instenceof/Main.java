@@ -7,10 +7,12 @@ public class Main {
 		A b1=new B();
 		//A b1=new C();
 		if(b1 instanceof B){
+			System.out.println("B");
 			b1.a=5;
 			((B) b1).b=7;
 		}
 		if(b1 instanceof C){
+			System.out.println("C");
 			b1.a=8;
 			((C) b1).c=8;
 		}

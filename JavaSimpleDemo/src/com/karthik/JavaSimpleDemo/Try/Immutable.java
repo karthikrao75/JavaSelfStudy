@@ -23,4 +23,5 @@ final class my {
   public String getName(){
 	  return this.name;
   }
+            
 }
