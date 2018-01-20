@@ -3,7 +3,7 @@ package com.karthik.JavaSimpleDemo.MultiThreading;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class MultiThreaingExample95 {
+public class MultiThreadingExample95 {
 
 	// Lock
 
