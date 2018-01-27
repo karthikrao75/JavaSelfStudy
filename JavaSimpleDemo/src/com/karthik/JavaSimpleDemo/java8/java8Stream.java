@@ -51,6 +51,11 @@ public class java8Stream {
 		list.add(tab4);
 		Map<String, Set<String>> namesByCity1 =list.stream().collect(Collectors.groupingBy(TableData::getLtv,
 				 Collectors.mapping(TableData::getCoverage, Collectors.toSet())));
+		
+		
+		
+		
 		System.out.println(namesByCity1);
+		
 	}
 }
