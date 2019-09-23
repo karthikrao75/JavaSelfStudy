@@ -94,6 +94,29 @@ public class LinkedList<T> {
 
 	}
 
+	public T get(int index) {
+		Node n = head;
+		for (int i = 0; i < index; i++) {
+			n = n.next;
+		}
+		return (T) n.data;
+	}
+
+	public boolean search(T element) {
+		Node n = head;
+		while (n != null) {
+			if (n.data.equals(element)) {
+				return true;
+			}
+			n = n.next;
+		}
+		return false;
+	}
+
+	public T getNthFromLast(int index) {
+		return get(size() - index-1);
+	}
+
 	public void show() {
 		Node<T> temp = head;
 		while (temp.next != null) {

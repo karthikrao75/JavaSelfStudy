@@ -21,6 +21,13 @@ public class Runner {
 		linkedList.show();
 		
 		
+		
+		
 		System.out.println("Size of the list is: "+linkedList.size());
+		
+		System.out.println("get impl: "+linkedList.get(0));
+		System.out.println("Search element: "+linkedList.search(25));
+		
+		System.out.println("get impl from last: "+linkedList.getNthFromLast(0));
 	}
 }
