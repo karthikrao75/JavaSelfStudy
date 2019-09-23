@@ -116,6 +116,14 @@ public class LinkedList<T> {
 	public T getNthFromLast(int index) {
 		return get(size() - index-1);
 	}
+	
+	public void findMiddleElement(){
+		int middle= size()/2;
+		Node n=head;
+		for(int i=0;i<middle;i++){
+			n=n.next;
+		}
+	}
 
 	public void show() {
 		Node<T> temp = head;
