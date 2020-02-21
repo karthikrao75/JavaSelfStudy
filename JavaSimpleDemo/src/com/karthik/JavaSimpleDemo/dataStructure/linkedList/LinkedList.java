@@ -1,4 +1,8 @@
-package com.karthik.JavaSimpleDemo.dataStructure;
+package com.karthik.JavaSimpleDemo.dataStructure.linkedList;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
 
 public class LinkedList<T> {
 
@@ -114,15 +118,56 @@ public class LinkedList<T> {
 	}
 
 	public T getNthFromLast(int index) {
-		return get(size() - index-1);
+		return get(size() - index - 1);
 	}
-	
-	public void findMiddleElement(){
-		int middle= size()/2;
-		Node n=head;
-		for(int i=0;i<middle;i++){
-			n=n.next;
+
+	public T findMiddleElement() {
+		int middle = size() / 2;
+		Node n = head;
+		for (int i = 0; i < middle; i++) {
+			n = n.next;
 		}
+		return (T) n.data;
+	}
+
+	public T findMiddleElementLogic() {
+		Node middle = head;
+		Node n = head;
+		while (n.next != null && n.next.next != null) {
+			n = n.next.next;
+			middle = middle.next;
+		}
+		return (T) middle.data;
+	}
+
+	public boolean isAPalindrome() {
+		String s = "";
+		Node n = head;
+		while (n != null) {
+			s = s + n.data;
+			n = n.next;
+		}
+		System.out.println(s);
+		return s.equals(new StringBuffer(s).reverse().toString());
+
+	}
+
+	public boolean isAPalindromeLogic() {
+		Stack<String> d = new Stack<>();
+		Node n = head;
+		while (n != null) {
+			d.add((String) n.data);
+			n = n.next;
+		}
+		Node x = head;
+		while (x != null) {
+			if (!x.data.equals(d.pop())) {
+				return false;
+			}
+			x = x.next;
+		}
+
+		return true;
 	}
 
 	public void show() {
@@ -132,6 +177,20 @@ public class LinkedList<T> {
 			temp = temp.next;
 		}
 		System.out.println(temp.data);
+	}
+
+	public void removeDuplicates() {
+		Set<T> set = new HashSet<>();
+		Node<T> temp = head;
+		while (temp != null) {
+			if (!set.add(temp.data)) {
+				if(temp.next != null)
+				temp.next=temp.next.next;
+				break;
+			} else {
+				temp = temp.next;
+			}
+		}
 	}
 
 }
