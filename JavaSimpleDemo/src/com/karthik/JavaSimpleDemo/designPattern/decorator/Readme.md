@@ -11,6 +11,6 @@
 
 ## When to use Decorator pattern in Java
 
--         When sub classing is become impractical and we need large number of different possibilities to make independent object or we can say we have number of combination for an object.
+- When sub classing is become impractical and we need large number of different possibilities to make independent object or we can say we have number of combination for an object.
 
--          Secondly when we want to add functionality to individual object not to all object at run-time we use decorator design pattern.
+- Secondly when we want to add functionality to individual object not to all object at run-time we use decorator design pattern.
